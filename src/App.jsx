@@ -15,15 +15,14 @@ function App() {
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
-        <div>
+        <div >
           <h1>Get started</h1>
           <p className="text-info">
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
-        <button
-          type="button"
-          className="btn btn-danger"
+        <button type="button" className="btn btn-primary"
+          
           onClick={() => setCount((count) => count + 1)}
         >
           Count is {count}
