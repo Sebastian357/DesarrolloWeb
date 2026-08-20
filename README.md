@@ -20,5 +20,8 @@ https://es.react.dev/
 https://vite.dev/
 
 ## Boostrap
-https://getbootstrap.com/
+https://getbootstrap.com/ 
 
+## Actividades
+2026/08/18
+Instalación de boostrap en el proyecto
