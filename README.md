@@ -25,3 +25,6 @@ https://getbootstrap.com/
 ## Actividades
 2026/08/18
 Instalación de boostrap en el proyecto
+
+2026/08/20
+Modelado+Implementación de LoginForm
