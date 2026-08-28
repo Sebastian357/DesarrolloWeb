@@ -22,9 +22,15 @@ https://vite.dev/
 ## Boostrap
 https://getbootstrap.com/ 
 
+## React Hook Form
+https://react-hook-form.com/
+
 ## Actividades
 2026/08/18
 Instalación de boostrap en el proyecto
 
 2026/08/20
 Modelado+Implementación de LoginForm
+
+2026/08/27
+Renderizado + Renderizado condicional
