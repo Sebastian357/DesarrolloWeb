@@ -34,3 +34,9 @@ Modelado+Implementación de LoginForm
 
 2026/08/27
 Renderizado + Renderizado condicional
+
+2026/09/03
+Formularios con useState y con React Hook Form
+
+2026/09/17
+Ruteo con React-Router
