@@ -12,13 +12,7 @@ import PantallaUsuarios from './componentes/pantallausuarios/pantallausuarios';
 import PantallaArticulos from './componentes/pantallaarticulos/pantallaarticulos';
 import NavBarPrincipal from './componentes/navbarprincipal/navbarprincipal';
 import LenguajesDeProgramacion from './componentes/lenguajesdeprogramacion/lenguajesdeprogramacion';
-import RecuXUsuarioActivos from './componentes/recu/recuxusuarioactivos';
-import RecuXUsuarioInvitado from './componentes/recu/recuxusuarioinvitado';
-import Saludo from './componentes/saludo/saludo';
-import LibrosTodos from './componentes/tpnro2/librostodos';
-import LibrosFantasia from './componentes/tpnro2/librosfatansia';
-import Libros15000 from './componentes/tpnro2/libros15000';
-import LibrosMenor from './componentes/tpnro2/tpalumno';
+
 
 
 
@@ -40,8 +34,13 @@ function App() {
 
     return (
         <>
-            <LibrosMenor datos={libros} />
 
+        <Routes>
+                <Route path="/" element={<FormCondicional />} />
+                <Route path="/usuarios" element={<PantallaUsuarios />} />
+                <Route path="/articulos" element={<PantallaArticulos />} />
+
+            </Routes>
 
 
         </>
@@ -51,11 +50,4 @@ function App() {
 export default App;
 
 
-/*
-<Routes>
-                <Route path="/" element={<FormCondicional />} />
-                <Route path="/usuarios" element={<PantallaUsuarios />} />
-                <Route path="/articulos" element={<PantallaArticulos />} />
-
-            </Routes>
-*/
+/**/
