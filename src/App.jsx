@@ -39,8 +39,7 @@ function App() {
                 <Route path="/" element={<FormCondicional />} />
                 <Route path="/usuarios" element={<PantallaUsuarios />} />
                 <Route path="/articulos" element={<PantallaArticulos />} />
-
-            </Routes>
+          </Routes>
 
 
         </>
