@@ -20,7 +20,10 @@ https://es.react.dev/
 https://vite.dev/
 
 ## Boostrap
-https://getbootstrap.com/ 
+https://getbootstrap.com/
+
+## React Router
+https://reactrouter.com/
 
 ## React Hook Form
 https://react-hook-form.com/
@@ -33,6 +36,13 @@ https://www.npmjs.com/package/react-toastify
 
 ## Yup
 https://www.npmjs.com/package/yup
+
+## Axios
+https://axios.rest/
+
+## Thunder Client - Cliente para API
+https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client
+
 
 
 ## Actividades
