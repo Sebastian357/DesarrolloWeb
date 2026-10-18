@@ -12,6 +12,8 @@ import PantallaUsuarios from './componentes/pantallausuarios/pantallausuarios';
 import PantallaArticulos from './componentes/pantallaarticulos/pantallaarticulos';
 import NavBarPrincipal from './componentes/navbarprincipal/navbarprincipal';
 import LenguajesDeProgramacion from './componentes/lenguajesdeprogramacion/lenguajesdeprogramacion';
+import FormInicio from './componentes/forminicio/forminicio';
+import FSProductosGet from './componentes/api/fspruductosget';
 
 
 
@@ -34,11 +36,16 @@ function App() {
 
     return (
         <>
-
+        
+        {/* <FSProductosGet /> */}
+        
+        <NavBarPrincipal />
+        
         <Routes>
-                <Route path="/" element={<FormCondicional />} />
+                <Route path="/" element={<FormInicio />} />
                 <Route path="/usuarios" element={<PantallaUsuarios />} />
                 <Route path="/articulos" element={<PantallaArticulos />} />
+                <Route path="/articulos/get" element={<FSProductosGet />} />
           </Routes>
 
 

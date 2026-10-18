@@ -44,3 +44,6 @@ Modelado+Implementación de LoginForm
 
 2026/08/27
 Renderizado + Renderizado condicional
+
+2026/10/14
+Axios + Fake Store API

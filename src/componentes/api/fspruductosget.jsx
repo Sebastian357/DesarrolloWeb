@@ -1,4 +1,3 @@
-import { string } from "yup";
 import api from "./api";
 import { useState } from "react";
 
@@ -11,26 +10,14 @@ const FSProductosGet = () => {
         console.log(response.data);
     };
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setIdprod(value);
-        console.log(value);
-    };
+
 
 
     return (
         <div>
             <h1>Get Productos</h1>
 
-            <input
-                className="border-3 border-info w-50 m-2"
-                type="number"
-                name="idprod"
-                value={idprod}
-                onChange={handleChange}
-                placeholder="ID Producto">
 
-            </input>
 
             <div className="m-1">
                 <button className="btn btn-primary"

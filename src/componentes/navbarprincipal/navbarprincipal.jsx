@@ -27,10 +27,15 @@ const NavBarPrincipal = () => {
                             </a>
                             <ul className="dropdown-menu">
                                 <li><NavLink to="/articulos" end>
-                                Alta
-                            </NavLink></li>
+                                    Alta
+                                </NavLink></li>
                                 <li><a className="dropdown-item" href="#">Búsqueda</a></li>
                                 <li><hr /></li>
+                                <li><NavLink to="/articulos/get" end>
+                                   Get
+                                </NavLink></li>
+                                
+
                                 <li><a className="dropdown-item" href="#">Reporte</a></li>
                             </ul>
                         </li>
