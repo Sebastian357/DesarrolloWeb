@@ -43,7 +43,7 @@ function App() {
         
         <Routes>
                 <Route path="/" element={<FormInicio />} />
-                <Route path="/usuarios" element={<PantallaUsuarios />} />
+                <Route path="/usuarios" element={<Formconhookform />} />
                 <Route path="/articulos" element={<PantallaArticulos />} />
                 <Route path="/articulos/get" element={<FSProductosGet />} />
           </Routes>
