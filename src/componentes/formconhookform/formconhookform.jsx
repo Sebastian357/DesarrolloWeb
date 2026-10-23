@@ -1,6 +1,7 @@
 import api from "../api/api";
 import { useForm } from "react-hook-form"
 import Swal from "sweetalert2";
+import { ToastContainer, toast } from 'react-toastify';
 
 const Formconhookform = () => {
     const { register, handleSubmit } = useForm();
@@ -12,10 +13,17 @@ const Formconhookform = () => {
                 { username: datos.usuario, password: datos.password });
 
             //console.log(respuesta.data);
-            Swal.fire({
-                title: "Login",
-                text: respuesta.data.token,
-                icon: "success"
+            // 
+            toast.success('🦄 Wow so easy!', {
+                position: "top-left",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+               // transition: Bounce,
             });
 
         }
@@ -33,7 +41,7 @@ const Formconhookform = () => {
 
     return (
         <div className="container text-center">
-            <h1>Formulario con HookForm</h1>
+            <h1>Formulario + msg con HookForm</h1>
             <form onSubmit={handleSubmit(handleLogin)}>
                 <div className="form-floating mb-3">
                     <input
@@ -62,6 +70,7 @@ const Formconhookform = () => {
                     Login
                 </button>
             </form>
+            <ToastContainer />
         </div>
     );
 };

@@ -14,6 +14,8 @@ import NavBarPrincipal from './componentes/navbarprincipal/navbarprincipal';
 import LenguajesDeProgramacion from './componentes/lenguajesdeprogramacion/lenguajesdeprogramacion';
 import FormInicio from './componentes/forminicio/forminicio';
 import FSProductosGet from './componentes/api/fspruductosget';
+import FsUsuarioPost from './componentes/fsusuariopost/fsusuariopost';
+import FsUsuarioPut from './componentes/fsusuarioput/fsusuarioput';
 
 
 
@@ -43,7 +45,7 @@ function App() {
         
         <Routes>
                 <Route path="/" element={<FormInicio />} />
-                <Route path="/usuarios" element={<Formconhookform />} />
+                <Route path="/usuarios" element={<FsUsuarioPut />} />
                 <Route path="/articulos" element={<PantallaArticulos />} />
                 <Route path="/articulos/get" element={<FSProductosGet />} />
           </Routes>
