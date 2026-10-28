@@ -16,40 +16,36 @@ import FormInicio from './componentes/forminicio/forminicio';
 import FSProductosGet from './componentes/api/fspruductosget';
 import FsUsuarioPost from './componentes/fsusuariopost/fsusuariopost';
 import FsUsuarioPut from './componentes/fsusuarioput/fsusuarioput';
-
+import Tarjeta from './componentes/children/children';
 
 
 
 function App() {
 
-    const libros = [
-        { "id": 1, "nombre": "Cien años de soledad", "autor": "Gabriel García Márquez", "genero": "Realismo mágico", "precio": 18000 },
-        { "id": 2, "nombre": "El amor en los tiempos del cólera", "autor": "Gabriel García Márquez", "genero": "Romance", "precio": 16000 },
-        { "id": 3, "nombre": "It", "autor": "Stephen King", "genero": "Terror", "precio": 22000 },
-        { "id": 4, "nombre": "El resplandor", "autor": "Stephen King", "genero": "Terror", "precio": 19000 },
-        { "id": 5, "nombre": "Misery", "autor": "Stephen King", "genero": "Suspenso", "precio": 17000 },
-        { "id": 6, "nombre": "Fundación", "autor": "Isaac Asimov", "genero": "Ciencia ficción", "precio": 15000 },
-        { "id": 7, "nombre": "Yo, robot", "autor": "Isaac Asimov", "genero": "Ciencia ficción", "precio": 14000 },
-        { "id": 8, "nombre": "Ficciones", "autor": "Jorge Luis Borges", "genero": "Fantasía", "precio": 13000 },
-        { "id": 9, "nombre": "El Aleph", "autor": "Jorge Luis Borges", "genero": "Fantasía", "precio": 12500 },
-        { "id": 10, "nombre": "Dune", "autor": "Frank Herbert", "genero": "Ciencia ficción", "precio": 21000 }
-    ];
-
-
     return (
         <>
-        
-        {/* <FSProductosGet /> */}
-        
-        <NavBarPrincipal />
-        
-        <Routes>
+            {/* <FSProductosGet /> */}
+
+            <NavBarPrincipal />
+
+            <Routes>
                 <Route path="/" element={<FormInicio />} />
                 <Route path="/usuarios" element={<FsUsuarioPut />} />
                 <Route path="/articulos" element={<PantallaArticulos />} />
                 <Route path="/articulos/get" element={<FSProductosGet />} />
-          </Routes>
+            </Routes>
 
+
+            <div className="container mt-4">
+                <Tarjeta titulo="Perfil">
+                    <p className="card-text">Nombre: Ana</p>
+                    <button className="btn btn-primary">Seguir</button>
+                </Tarjeta>
+
+                <Tarjeta titulo="Aviso">
+                    <p className="card-text mb-0">Mañana no hay clase</p>
+                </Tarjeta>
+            </div>
 
         </>
     )
@@ -59,3 +55,15 @@ export default App;
 
 
 /**/
+//const libros = [
+//     { "id": 1, "nombre": "Cien años de soledad", "autor": "Gabriel García Márquez", "genero": "Realismo mágico", "precio": 18000 },
+//     { "id": 2, "nombre": "El amor en los tiempos del cólera", "autor": "Gabriel García Márquez", "genero": "Romance", "precio": 16000 },
+//     { "id": 3, "nombre": "It", "autor": "Stephen King", "genero": "Terror", "precio": 22000 },
+//     { "id": 4, "nombre": "El resplandor", "autor": "Stephen King", "genero": "Terror", "precio": 19000 },
+//     { "id": 5, "nombre": "Misery", "autor": "Stephen King", "genero": "Suspenso", "precio": 17000 },
+//     { "id": 6, "nombre": "Fundación", "autor": "Isaac Asimov", "genero": "Ciencia ficción", "precio": 15000 },
+//     { "id": 7, "nombre": "Yo, robot", "autor": "Isaac Asimov", "genero": "Ciencia ficción", "precio": 14000 },
+//     { "id": 8, "nombre": "Ficciones", "autor": "Jorge Luis Borges", "genero": "Fantasía", "precio": 13000 },
+//     { "id": 9, "nombre": "El Aleph", "autor": "Jorge Luis Borges", "genero": "Fantasía", "precio": 12500 },
+//     { "id": 10, "nombre": "Dune", "autor": "Frank Herbert", "genero": "Ciencia ficción", "precio": 21000 }
+// ];
